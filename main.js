@@ -7,15 +7,18 @@ console.log('Sample JavaScript #1 HW #13');
  */
 
 // имя переменной: myNum, значение: 10
-
+var myNum = 10;
 // имя переменной: myStr, значение: 'строка'
-
+var myStr = 'строка';
 // имя переменной: myBool, значение: true
-
+var myBool = true;
 // имя переменной: myArr, значения: 1, 2, 3, 4, 5
-
+var myArr = [1, 2, 3, 4, 5];
 // имя переменной myObj, значения: first: 'First Name', last: 'Last Name'
-
+var myObj = {
+  first: 'First Name',
+  last: 'Last Name'
+};
 /*
  * #2
  *
