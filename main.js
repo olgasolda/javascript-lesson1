@@ -26,6 +26,8 @@ var myObj = {
  * чтобы получить результат с 2 знаками после запятой.
  * Результат сохраните в переменную decimal2.
  */
+var decimal2 = myNum.toFixed(2);
+
 
 // decimal2
 
@@ -36,7 +38,11 @@ var myObj = {
  * и постфиксный инкремент и декремент.
  * Поэкспериментируйте с результатами, выводя их в консоль.
  */
-
+var i = 5;
+i++;
+++i;
+i--;
+--i;
 // i
 
 /*
@@ -47,7 +53,13 @@ var myObj = {
  * Результаты присваиваются в myTest, затем выводятся в консоль.
  * В вычислениях можно использовать объявленную ранее переменную myNum и/или числа.
  */
-
+var myTest = 20;
+myTest += myNum;
+myTest -= myNum;
+myTest *= myNum;
+myTest /= myNum;
+myTest %= myNum;
+console.log(myTest);
 // myTest
 
 // +=
@@ -67,13 +79,17 @@ var myObj = {
  */
 
 // константа Pi → myPi
-
+var myPi = Math.PI;
+console.log(Math.PI);
 // округленное значение числа 89.279 → myRound
-
+var myRound = Math.round(89.279);
+console.log(myRound);
 // случайное число между 0..10 → myRandom
-
+var myRandom = Math.random()*10;
+console.log(myRandom);
 // 3 в 5 степени → myPow
-
+var myPow = Math.pow(3,5);
+console.log(myPow);
 /*
  * #6
  *
