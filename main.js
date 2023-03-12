@@ -96,8 +96,10 @@ console.log(myPow);
  * Создайте объект с именем strObj.
  * Присвойте ключу str строку текста "Мама мыла раму, рама мыла маму", ключу length установите длину этой строки.
  */
-
 // Мама мыла раму, рама мыла маму
+var strObj = {str:'Мама мыла раму, рама мыла маму'};
+strObj.length = strObj.str.length;
+console.log(strObj);
 
 // strObj
 
@@ -107,7 +109,8 @@ console.log(myPow);
  * Проверьте наличие текста 'рама' в поле str объекта strObj (см.п.6),
  * результат сохраните в переменную isRamaPos и выведите ее в консоль.
  */
-
+var isRamaPos = strObj.str.indexOf('рама');
+console.log(isRamaPos);
 // isRamaPos
 
 /*
@@ -118,7 +121,10 @@ console.log(myPow);
  * Исходная строка: 'Мама мыла раму, рама мыла маму'
  *       Результат: 'Мама моет раму, Рама держит маму'
  */
-
+var strReplace = strObj.str.replace('мыла', 'моет');
+strReplace = strReplace.replace('рама', 'Рама');
+strReplace = strReplace.replace('мыла', 'держит');
+console.log(strReplace);
 // strReplace
 
 /*
@@ -126,3 +132,5 @@ console.log(myPow);
  *
  * Преобразуйте любую строку в верхний, затем в нижний регистры, результат отобразите в консоли.
  */
+console.log(strReplace.toUpperCase());
+console.log(strReplace.toLowerCase());
